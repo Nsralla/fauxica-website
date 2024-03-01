@@ -1,0 +1,49 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    gap: 4em;
+    list-style-type: none;
+   
+}
+
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+header ul li a.active:before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 1px;
+    bottom: -3px;
+    left: 0; 
+    border-bottom: 2px solid black;
+    display: block; 
+}
+
+header ul li a:before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    bottom: -3px;
+    left: 0; 
+    border-bottom: 2px solid black;
+    display: block; 
+    transition: width 0.4s;
+}
+
+header ul li a:hover:before{
+    width: 40%;
+}
+

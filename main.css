@@ -180,6 +180,26 @@ a svg{
     font-size: 1.4rem;
 }
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+img, .left-col p, .promo p, .card_details p, a {
+    animation: fadeIn .8s ease-in-out;
+}
+
+
+.card {
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0; 
+}
+
+.card1 { animation-delay: 0.5s; }
+.card2 { animation-delay: .7s; }
+.card3 { animation-delay: .9s; }
+
+
 .price{
     font-size: 2rem;
 }
